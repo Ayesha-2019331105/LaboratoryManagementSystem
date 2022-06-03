@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="583.0" prefWidth="600.0" style="-fx-background-color: #039BE5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LaboratoryManagement.Controller.AssignmentTable">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="86.0" layoutY="113.0" text="Smart Lab" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Line endX="51.20001220703125" layoutX="148.0" layoutY="135.0" startX="-100.0" stroke="BLUE" />
+      <ScrollPane layoutX="1.0" layoutY="209.0" prefHeight="374.0" prefWidth="600.0">
+         <content>
+            <TableView fx:id="Table" prefHeight="374.0" prefWidth="598.0">
+              <columns>
+                <TableColumn fx:id="courseName" prefWidth="106.4000244140625" text="Course Name" />
+                <TableColumn fx:id="groupNo" prefWidth="119.199951171875" text="GroupNo" />
+                  <TableColumn fx:id="expName" minWidth="8.0" prefWidth="120.00006103515625" text="Experiment Name" />
+                  <TableColumn fx:id="materials" minWidth="8.0" prefWidth="120.00006103515625" text="Materials" />
+                  <TableColumn fx:id="report" minWidth="8.0" prefWidth="131.20001220703125" text="Report" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="DetailsAssignment" layoutX="440.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleDetailsAssignment" prefHeight="30.0" prefWidth="58.0" text="OK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="515.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleback" prefHeight="30.0" prefWidth="72.0" text="&lt;Back&gt;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

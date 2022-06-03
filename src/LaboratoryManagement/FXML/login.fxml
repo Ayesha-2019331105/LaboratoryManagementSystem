@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="1500.0" style="-fx-background-color: #2170A0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LaboratoryManagement.Controller.loginController">
+   <children>
+      <ImageView fitHeight="814.0" fitWidth="1048.0" layoutX="457.0" layoutY="-104.87678222656234" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-1.2770874023439092" AnchorPane.rightAnchor="-5.0">
+         <image>
+            <Image url="@../resource/Login1.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userId" layoutX="648.0" layoutY="269.0" prefHeight="34.0" prefWidth="282.0" promptText="User ID" />
+      <Button fx:id="signUp" layoutX="864.0" layoutY="643.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="34.0" prefWidth="84.0" style="-fx-background-color: blue; -fx-background-radius: 30;" text="SignUp" textFill="#fcfbfb">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <Button fx:id="login" layoutX="863.0" layoutY="524.0" mnemonicParsing="false" onAction="#Login" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: blue; -fx-background-radius: 30;" text="LogIn" textFill="#f3f5f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <CheckBox fx:id="showPass" layoutX="648.0" layoutY="380.0" mnemonicParsing="false" onAction="#ShowPassword" prefHeight="23.0" prefWidth="114.0" style="-fx-background-color: blue; visibility: 1;" text="Show Password" textFill="#f0f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></CheckBox>
+      <PasswordField fx:id="password" layoutX="648.0" layoutY="335.0" prefHeight="34.0" prefWidth="282.0" promptText="Password" />
+      <Button layoutX="648.0" layoutY="524.0" mnemonicParsing="false" onAction="#forgetPass" prefHeight="26.0" prefWidth="161.0" style="-fx-background-color: blue;" text="Forget password?" textFill="#f4f8fa">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <ProgressBar fx:id="progress" layoutX="697.0" layoutY="577.0" prefHeight="34.0" prefWidth="200.0" style="-fx-border-color: blue;" />
+      <TextField fx:id="Passtext" layoutX="647.0" layoutY="335.0" prefHeight="34.0" prefWidth="282.0" visible="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+      <Button fx:id="Home" layoutX="648.0" layoutY="643.0" mnemonicParsing="false" onAction="#backHome" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: blue; -fx-background-radius: 30;" text="Home" textFill="#fcfbfb">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></Button>
+      <ChoiceBox fx:id="typeOfUser" layoutX="753.0" layoutY="432.0" prefHeight="26.0" prefWidth="178.0" />
+      <Label layoutX="647.0" layoutY="432.0" prefHeight="26.0" prefWidth="78.0" text="Type of user:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="684.0" layoutY="39.0" prefHeight="50.0" prefWidth="209.0" text="USER LOGIN" textFill="#040459">
+         <font>
+            <Font name="ROGFonts-Regular" size="25.0" />
+         </font>
+      </Label>
+      <Circle layoutX="789.0" layoutY="156.0" radius="58.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="0.8674242424242424" endY="0.9232954545454545" startX="0.6107954545454546" startY="0.5785984848484846">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.08470000326633453" green="0.5482341647148132" blue="0.7699999809265137" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <Circle fill="BLUE" layoutX="789.0" layoutY="138.0" radius="29.0" stroke="BLUE" strokeType="INSIDE" />
+      <QuadCurve controlX="0.199981689453125" controlY="-69.40000915527344" endX="40.999969482421875" endY="-11.000015258789062" fill="BLUE" layoutX="789.0" layoutY="205.0" startX="-43.000030517578125" startY="-11.000015258789062" stroke="BLUE" strokeType="INSIDE" />
+      <ImageView fitHeight="33.0" fitWidth="29.0" layoutX="610.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/username.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="35.0" layoutX="607.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/passwordIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
